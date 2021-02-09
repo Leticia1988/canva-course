@@ -1,0 +1,18 @@
+title: canva
+description: >-
+  Se explica si esta aplicación cuenta con las características de los Objetos e
+  Aprendizaje
+template:
+  repo: canva-template
+  name: canva
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
